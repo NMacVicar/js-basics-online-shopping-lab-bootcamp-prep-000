@@ -13,7 +13,8 @@ function addToCart(item) {
  // write your code here
  cart = newObject()
  cart[item] = math.floor(100 * math.random())
- 
+ return cart
+
 }
 
 function viewCart() {
