@@ -16,7 +16,6 @@ function addToCart(item) {
  cart.push(itemPair)
  console.log(`${item} has been added to your cart.`)
  return cart
-
 }
 
 function viewCart() {
@@ -36,7 +35,7 @@ function viewCart() {
     }
   } else if (cartLength === 2){
     for (item in cart[0]){
-      s +=
+      s += `${item} at $${cart[i][item]} `
     }
   }
 }
