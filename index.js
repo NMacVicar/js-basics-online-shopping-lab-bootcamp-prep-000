@@ -29,22 +29,22 @@ function viewCart() {
       for (item in cart[i]){
         s += `${item} at $${cart[i][item]}, `
       }
-    } 
+    }
     for (item in cart[cartLength - 1]){
       s += `and ${item} at $${cart[cartLength - 1][item]}.`
     }
     console.log(s)
   } else if (cartLength === 2){
     for (item in cart[0]){
-      s += `${item} at $${cart[i][item]} `
-    } 
+      s += `${item} at $${cart[0][item]} `
+    }
     for (item in cart[1]){
-      s += `and ${item} at $${cart[cartLength - 1][item]}.`
+      s += `and ${item} at $${cart[1][item]}.`
     }
     console.log(s)
   } else {
     for (item in cart[0]){
-      s += `${item} at $${cart[i][item]}.`
+      s += `${item} at $${cart[0][item]}.`
     }
     console.log(s)
   }
