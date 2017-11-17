@@ -73,7 +73,7 @@ function removeFromCart(item) {
       return cart
     }
     else if (check){
-      cart = [...cart.slice(0, i), ...cart.splice(i + 1)]
+      cart = [...cart.slice(0, i), ...cart.slice(i + 1)]
       return cart
     }
   }
