@@ -64,10 +64,12 @@ function total() {
 function removeFromCart(item) {
   for (var i = 0; i < cart.length; i++){
     if (cart[i].hasOwnPropert(item)){
-      cart
-    }  
+      cart = [...cart.splice(0, i), ...cart.splice(i + 1)]
+      return cart
+    }
   }
  console.log("That item is not in your cart.")
+ return cart
 }
   // write your code here
 
