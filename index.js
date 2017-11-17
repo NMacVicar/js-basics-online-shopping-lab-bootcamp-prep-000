@@ -29,8 +29,7 @@ function viewCart() {
       for (item in cart[i]){
         s += `${item} at $${cart[i][item]}, `
       }
-    }
-    for (item in cart[cartLength - 1]){
+    } for (item in cart[cartLength - 1]){
       s += `and ${item} at $${cart[cartLength - 1][item]}.`
     }
   } else if (cartLength === 2){
