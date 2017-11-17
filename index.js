@@ -52,13 +52,13 @@ function viewCart() {
 
 function total() {
   // write your code here
-  var total = 0
+  var cartTotal = 0
   for (var i = 0; i < cart.length; i++){
     for (var item in cart[i]){
-      total += cart[i][item]
+      cartTotal += cart[i][item]
     }
   }
-  return total
+  return cartTotal
 }
 
 function removeFromCart(item) {
@@ -76,4 +76,10 @@ function removeFromCart(item) {
 
 function placeOrder(cardNumber) {
   // write your code here
+  if (){
+    
+  } else {
+    var total = total()
+    console.log(`Your total cost is ${total}`)
+  }
 }
