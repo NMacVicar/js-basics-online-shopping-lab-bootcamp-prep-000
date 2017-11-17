@@ -67,7 +67,7 @@ function removeFromCart(item) {
     if (check && i === 0){
       cart.shift()
       return cart
-    } 
+    }
     else if (check && i === cart.length - 1){
       cart.pop()
       return cart
@@ -89,7 +89,7 @@ function placeOrder(cardNumber) {
     console.log("Sorry, we don\'t have a credit card on file for you.")
   } else {
     var charge = total()
-    console.log(`Your total cost is ${charge}, which will be charged to the card ${cardNumber}`)
+    console.log(`Your total cost is ${charge}, which will be charged to the card ${cardNumber}.`)
     cart = []
   }
 }
