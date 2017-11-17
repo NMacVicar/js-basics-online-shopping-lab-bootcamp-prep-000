@@ -36,7 +36,7 @@ function viewCart() {
     }
   } else if (cartLength === 2){
     for (item in cart[0]){
-      s += 
+      s +=
     }
   }
 }
