@@ -24,24 +24,29 @@ function viewCart() {
   let s = "In your cart, you have "
   if (cartLength === 0){
     console.log("Your shopping cart is empty.")
-  } else if (cartLength) >= 3{
+  } else if (cartLength >= 3){
     for (var i = 0; i < cartLength - 1; i++){
       for (item in cart[i]){
         s += `${item} at $${cart[i][item]}, `
       }
-    } for (item in cart[cartLength - 1]){
+    } 
+    for (item in cart[cartLength - 1]){
       s += `and ${item} at $${cart[cartLength - 1][item]}.`
     }
+    console.log(s)
   } else if (cartLength === 2){
     for (item in cart[0]){
       s += `${item} at $${cart[i][item]} `
-    } for (item in cart[1]){
+    } 
+    for (item in cart[1]){
       s += `and ${item} at $${cart[cartLength - 1][item]}.`
     }
+    console.log(s)
   } else {
     for (item in cart[0]){
       s += `${item} at $${cart[i][item]}.`
     }
+    console.log(s)
   }
 }
 
