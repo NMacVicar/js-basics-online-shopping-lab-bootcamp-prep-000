@@ -39,6 +39,10 @@ function viewCart() {
     } for (item in cart[1]){
       s += `and ${item} at $${cart[cartLength - 1][item]}.`
     }
+  } else {
+    for (item in cart[0]){
+      s += `${item} at $${cart[i][item]}.`
+    }
   }
 }
 
